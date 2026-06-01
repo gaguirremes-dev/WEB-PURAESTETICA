@@ -1,0 +1,4 @@
+node_modules/
+pura-estetica/node_modules/
+.DS_Store
+*.log

@@ -1,0 +1,17 @@
+{
+  "name": "Pura Estética — Expertos en Fillers",
+  "short_name": "Pura Estética",
+  "description": "Clínica de medicina estética premium en Cancún, Quintana Roo. Fillers, Botox, Faciales y Depilación Láser.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2a2a2a",
+  "theme_color": "#c99e48",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/assets/images/branding/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/images/branding/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/images/branding/icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "lang": "es-MX",
+  "categories": ["health", "beauty", "medical"]
+}

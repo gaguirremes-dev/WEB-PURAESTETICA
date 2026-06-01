@@ -1,0 +1,51 @@
+/* ============================================================
+   VARIABLES — Pura Estética
+   Paleta oficial + tokens de diseño
+   ============================================================ */
+
+:root {
+  /* Colores */
+  --color-light:      #F4F4F4;
+  --color-gold-light: #d0b174;
+  --color-gold:       #c99e48;
+  --color-gold-dark:  #b58b38;
+  --color-dark:       #3b3937;
+  --color-darker:     #2a2a2a;
+  --color-white:      #ffffff;
+  --color-black:      #000000;
+  --color-overlay:    rgba(42,42,42,0.55);
+
+  /* Tipografías (self-hosted con fallbacks) */
+  --font-heading: 'Maharlika', 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Glacial Indifference', 'Montserrat', 'Segoe UI', sans-serif;
+
+  /* Espaciado */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  7rem;
+  --space-2xl: 10rem;
+
+  /* Bordes */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-soft: 0 4px 24px rgba(42,42,42,0.08);
+  --shadow-md:   0 8px 40px rgba(42,42,42,0.12);
+  --shadow-gold: 0 4px 24px rgba(201,158,72,0.18);
+
+  /* Transiciones */
+  --transition-fast: 0.25s cubic-bezier(0.4,0,0.2,1);
+  --transition-med:  0.45s cubic-bezier(0.4,0,0.2,1);
+  --transition-slow: 0.75s cubic-bezier(0.4,0,0.2,1);
+
+  /* Z-index */
+  --z-base:    1;
+  --z-header: 100;
+  --z-modal:  200;
+  --z-toast:  300;
+}

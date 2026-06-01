@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+CiAgPGRlZnM+CiAgICA8Y2xpcFBhdGggaWQ9ImMiPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ4Ii8+PC9jbGlwUGF0aD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkMGIxNzQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjU4YjM4Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIEJvcmRlIGRvcmFkbyBjaXJjdWxhciAtLT4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0idXJsKCNnKSIvPgogIDwhLS0gSW1hZ2VuIHJlY29ydGFkYSBlbiBjw61yY3VsbyAtLT4KICA8aW1hZ2UgaHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFiNEFBQUhlQ0FZQUFBRGtlVzZ6QUFBQUFYTlNSMElBcnM0YzZRQUFBQVJuUVUxQkFBQ3hqd3Y4WVFVQUFBQUpjRWhaY3dBQURzUUFBQTdFQVpVckRoc0FBQVZ4YVZSWWRGaE5URHBqYjIwdVlXUnZZbVV1ZUcxd0FBQUFBQUE4UDNod1lXTnJaWFFnWW1WbmFXNDlKKys3dnljZ2FXUTlKMWMxVFRCTmNFTmxhR2xJZW5KbFUzcE9WR042YTJNNVpDYy9QZ284ZURwNGJYQnRaWFJoSUhodGJHNXpPbmc5SjJGa2IySmxPbTV6T20xbGRHRXZKejRLUEhKa1pqcFNSRVlnZUcxc2JuTTZjbVJtUFNkb2RIUndPaTh2ZDNkM0xuY3pMbTl5Wnk4eE9UazVMekF5THpJeUxYSmtaaTF6ZVc1MFlYZ3Ribk1qSno0S0NpQThjbVJtT2tSbGMyTnlhWEIwYVc5dUlISmtaanBoWW05MWREMG5Kd29nSUhodGJHNXpPa0YwZEhKcFlqMG5hSFIwY0RvdkwyNXpMbUYwZEhKcFluVjBhVzl1TG1OdmJTOWhaSE12TVM0d0x5YytDaUFnUEVGMGRISnBZanBCWkhNK0NpQWdJRHh5WkdZNlUyVnhQZ29nSUNBZ1BISmtaanBzYVNCeVpHWTZjR0Z5YzJWVWVYQmxQU2RTWlhOdmRYSmpaU2MrQ2lBZ0lDQWdQRUYwZEhKcFlqcERjbVZoZEdWa1BqSXdNall0TURVdE1qVThMMEYwZEhKcFlqcERjbVZoZEdWa1Bnb2dJQ0FnSUR4QmRIUnlhV0k2UkdGMFlUNTdKbkYxYjNRN1pHOWpKbkYxYjNRN09pWnhkVzkwTzBSQlNFdG5Sak5ZUTFSWkpuRjFiM1E3TENaeGRXOTBPM1Z6WlhJbWNYVnZkRHM2Sm5GMWIzUTdWVUZHWVVwMmJGbFJaWGNtY1hWdmREc3NKbkYxYjNRN1luSmhibVFtY1hWdmREczZKbkYxYjNRN1FrRkdZVXB5WkRGTVoyTW1jWFZ2ZER0OVBDOUJkSFJ5YVdJNlJHRjBZVDRLSUNBZ0lDQThRWFIwY21saU9rVjRkRWxrUGpSa1pXUTJNakUzTFdRNU5EUXROREJoTXkwNVpXRXhMVFl6TXpFNE1UVmhNREE0WlR3dlFYUjBjbWxpT2tWNGRFbGtQZ29nSUNBZ0lEeEJkSFJ5YVdJNlJtSkpaRDQxTWpVeU5qVTVNVFF4TnprMU9EQThMMEYwZEhKcFlqcEdZa2xrUGdvZ0lDQWdJRHhCZEhSeWFXSTZWRzkxWTJoVWVYQmxQakk4TDBGMGRISnBZanBVYjNWamFGUjVjR1UrQ2lBZ0lDQThMM0prWmpwc2FUNEtJQ0FnUEM5eVpHWTZVMlZ4UGdvZ0lEd3ZRWFIwY21saU9rRmtjejRLSUR3dmNtUm1Pa1JsYzJOeWFYQjBhVzl1UGdvS0lEeHlaR1k2UkdWelkzSnBjSFJwYjI0Z2NtUm1PbUZpYjNWMFBTY25DaUFnZUcxc2JuTTZaR005SjJoMGRIQTZMeTl3ZFhKc0xtOXlaeTlrWXk5bGJHVnRaVzUwY3k4eExqRXZKejRLSUNBOFpHTTZkR2wwYkdVK0NpQWdJRHh5WkdZNlFXeDBQZ29nSUNBZ1BISmtaanBzYVNCNGJXdzZiR0Z1WnowbmVDMWtaV1poZFd4MEp6NHhJRTFoYm5WaGJDQmtaU0JOWVhKallTQXRJRkIxY21FZ1JYTjB3NmwwYVdOaElDMGdOVHd2Y21SbU9teHBQZ29nSUNBOEwzSmtaanBCYkhRK0NpQWdQQzlrWXpwMGFYUnNaVDRLSUR3dmNtUm1Pa1JsYzJOeWFYQjBhVzl1UGdvS0lEeHlaR1k2UkdWelkzSnBjSFJwYjI0Z2NtUm1PbUZpYjNWMFBTY25DaUFnZUcxc2JuTTZjR1JtUFNkb2RIUndPaTh2Ym5NdVlXUnZZbVV1WTI5dEwzQmtaaTh4TGpNdkp6NEtJQ0E4Y0dSbU9rRjFkR2h2Y2o1SFFWSlNTVVJQSUVKQlZWUkpVMVJCSUVWRVYwbE9JRmxCU0VsU1BDOXdaR1k2UVhWMGFHOXlQZ29nUEM5eVpHWTZSR1Z6WTNKcGNIUnBiMjQrQ2dvZ1BISmtaanBFWlhOamNtbHdkR2x2YmlCeVpHWTZZV0p2ZFhROUp5Y0tJQ0I0Yld4dWN6cDRiWEE5SjJoMGRIQTZMeTl1Y3k1aFpHOWlaUzVqYjIwdmVHRndMekV1TUM4blBnb2dJRHg0YlhBNlEzSmxZWFJ2Y2xSdmIydytRMkZ1ZG1FZ0tGSmxibVJsY21WeUtTQmtiMk05UkVGSVMyZEdNMWhEVkZrZ2RYTmxjajFWUVVaaFNuWnNXVkZsZHlCaWNtRnVaRDFDUVVaaFNuSmtNVXhuWXp3dmVHMXdPa055WldGMGIzSlViMjlzUGdvZ1BDOXlaR1k2UkdWelkzSnBjSFJwYjI0K0Nqd3ZjbVJtT2xKRVJqNEtQQzk0T25odGNHMWxkR0UrQ2p3L2VIQmhZMnRsZENCbGJtUTlKM0luUHo0cWFnenNBQUFBVG1WWVNXWk5UUUFxQUFBQUNBQUVBUm9BQlFBQUFBRUFBQUErQVJzQUJRQUFBQUVBQUFCR0FTZ0FBd0FBQUFFQUFnQUFBaE1BQXdBQUFBRUFBUUFBQUFBQUFBQUFBR0FBQUFBQkFBQUFZQUFBQUFGM0JkL25BQUF1MFVsRVFWUjRYdTNkQjNSazJWM244WCtwU2ptVmNtcDFxM09hbkdjODBSTnNQRFpMTU1abWZXeUQ4V0xXWmdsbndHQnNsaVVZWStJZVlERW1yTDF3WU0zQkN3TWVqOE9NWjhhVGt5ZDB6cm5WeWpsTHBYMzM2YTlwdFZwU0tWUkpkZS85ZnVaVTEvMC9hYzZacWU3Vzc5Mzdib2k4L3ZCRGt3SUFnQ2V5OUIwQUFDOFFmQUFBcnhCOEFBQ3ZFSHdBQUs4UWZBQUFyeEI4QUFDdkVId0FBSzhRZkFBQXJ4QjhBQUN2RUh3QUFLOFFmQUFBcnhCOEFBQ3ZFSHdBQUs4UWZBQUFyeEI4QUFDdkVId0FBSzhRZkFBQXJ4QjhBQUN2RUh3QUFLOFFmQUFBcnhCOEFBQ3ZFSHdBQUs4UWZBQUFyeEI4QUFDdkVId0FBSzhRZkFBQXJ4QjhBQUN2RUh3QUFLOFFmQUFBcnhCOEFBQ3ZFSHdBQUs4UWZBQUFyeEI4QUFDdkVId0FBSzlFWG4vNG9VbHRPeVczcUVxeTgwcTBBcFpvY2xJU2lYRkpUSXdGcjFHWjFQZUpzV0g5QmdDMmNqYjQxbDM5bzFLeDRSYXRnTlNhR0I5K0t3ekRjQnkvMko2Y3Z2YlcxMGFDd0J5UzhkR0J0MTRUSTFQdjVuc0FyQzZIZysrOVFmRGRyQldRbVV3d1Rzd0l4UEdSL3JBZUcrNlQwYUZ1R1J2cWt0SEJycUR1MFg4RHdFclI0d01zTVRyUUVZUmhaeENFM2NFcmVBOUNjU3dJUlJPTXBnMWdjWndOdnNhZ3gxZE9qdytlbUV4TXlNaEFtd3ozdHNod2YvRHF2U0REZlMxQldMYkw1R1JDdnd1QVFmQUJEZ3NEc2I5VmhzSWduQXBERTRxbXh4aDhkZXFiQU04NEczeFZtKytTa3RwZFdnWC9vNUdJUkxNTEpKWVR2SEtMOVNvV1k3RHJqQ1FTWTFyWktSTEpra2hXVExLeW9zRzd2aUt4aSszZ2xSWE4wZTkybjVsd005QjFPdmk5TmE5VDRXdDhkRkMvQ3JqTjJlQkxKaXVhTGRHY3dqQUl3MERNTFFyYWhlRVNpTUtLalZKWXZsRy9Fd2NmLzMwWkdXalh5bjNtejRDNU9US3ZuUHpTOEQyOEZyek1lM1p1OEFxdXU4WThRK3p2T0M1OWJVZWt2KzBRUVFobmVSdDh5WmhnTEtyY0lzWFYyNldrWm9ma0ZGVG9WL3pqVy9BdGx2a3prVmRjSmJsRk5jRjdUYmgyMUx4SHMvUDFPK3cyMUhOTyt0dVBTbC9yNFNBTUQrdFZ3SDRFM3lJVmxtMlFpcVpicGF6eGVyM2lqNFBmL1lLTTlMZHBoV1JNRHpHdnVEb0l3bXJKTDIyUTRxcXRRVWlXNjFmdE5Ka1lEMEx3V0JpQWZhMkh3bWVGZ0swSXZpVXlRMTNtK1dIbHh0dkVQRFB5QVQyK2xjdkpMNU9pNm0xU1ZMRXBIRWt3ZjQ1c05qN1NKOTNuWHBlT1V5OFNnckFPd2JkTU9RVmxzdkhtbndydTdHdjFpcnNJdnRRelE2SkZGWnVscUdxTGxOVHN0UG9tYXJEN2pIU2VmaWtNUXJaMGd3MEl2aFV3c3dDYmJ2cXdGRmR0MHl0dUl2alN5L3c1aWpkY0xlV05ONFlUcTJ6V2RmYTFJQVJmRElkRmdVeEY4SzJRdVZQZjhyYi9LZ1ZsalhyRlBUempXejFtU0xSOC9ZMVMxbmhET0twZ0svUG54UXlEZHA1NVdTYVlIWW9NUS9DbGdKbkZ0K1B0dnh4T2FuQVJQYjYxWVo0RmhpRzQ3anE5WXFmdTgyOUl5K0hIWmJpM1dhOEFheXY2OFEvYzlwdmF4aktaR1c5bTZuZDVjSmZ1b3ZhVHozSFh2Z2JNN2lvOXpYdWw0K1FMRW9tSTVKZldod3Z0YldPZWcxYzIzU3FGNVUweU50eXJ1OFlBYTRmZ1N4SHpsem0vcEM2Y3RPQ2E5dVBQeU1RWXdiZFd6TkZGWmhsQjU2a1h3aTNJVEFCbVdUZ1pKcmV3SXJ3NUxLM2RIUjdUeEd4UXJCV0NMNFhNM2F3Wm1uSU5QYjdNWUk0d01wTkcyazg4SjRrZ09NeU5WbFlzVjc5cUQ3T1VJMTUvVmZDNldoTGp3K0Vlb3NCcXl0SjNwTUJBNTRsd3lOTTVrendHemlSbW44M1dvMC9LL3U5OFRwb1BQQm9Hb28zTTZNajY2ejRnTysvOWxKTTNqTWhjQkYrS2RaNTVWVnNPTVErWWtISE1zK1hXSTkrVmc0OS9YbnFhOStoVis1aXQzeHF2ZVo5c3ZmUG53MkZjSU4wSXZoUXppM2c1N2dXcnlReXhuM3o1LzhqeEYvNG1QSlRXVmdYeGRXSDQxZTkrajFjblpXRDFFWHdwWnJaeUd1cDJiTGlUb1U0cm1EMDBEenoyT2JsdzhGdDZ4VDdtK0tpcXpYZktqcmYvaXZNYlEyRHRFSHhwTU1SNkpheWhsc09QeVlISFB4LzhPVHl2Vit4ampuM2FkT3ZId3Q0ZmtHb0VYeG80RjN3ODQ3T09PVnZ2Nk5OL2J2V3pQOFAwL3JiZC9ZdmhrVTlBcWhCOGFjQU9GY2dFWnJhbmVmYlh2UDhiZXNWTytTWDE0ZENuajBlQ0lUMEl2alFZRytyV0ZyRDJXbzgrSWNlZSs2dHcwYmpOMWwvNy9xbWhUMFlnc0VJRVh4cXdKUk15alRsSi9mQ1RmMkw5YmlsbTZIUFRMUitUYUN4UHJ3QkxSL0Nsd2VSa1FzWkhCN1J5QUxNNm5UQTYxQlUrOTdOOWt3VnpvdjNXTzM4dVhQOEhMQWZCbHlaT2JmSEYwSkl6SnNhSDVmanpYN0srNTVkYlZDMWI3L2dFazE2d0xBUmZtcGdmTUVBbUdnOXV5bzQ5OTBVWkhlelFLM1l5eDRCdHVmMFRUbTRNai9RaStOSmtZb3pnUStZYUgrbVhvODkrTWR6MXhXYXhuTUl3L0FyaTdoNEVqZFFqK05MRTdEcnZESjd4T2NuTVBqNzI3RjlhL3p6YUhBUzkrYmFma2J5U09yMENMSXpnUzVQSlJFSmJEdUFabjdQTXlmcG1xWU90Snp4TU04Y3piYm50NDB4NHdhSVFmSURueklZTFoxNzdxbGIyaXVZVXlPWmJQeWF4NEIxWUNNRUhRTHJQdnlHZHAxN1V5bDQ1aFJXeTZkYi93dWtPV0JEQkJ5QjBkcysvV2IvTXdjZ3ZiWkFOMS85bnJZRExFWHdBUXVaZzI1TXZmZG42NTMxR1NlMHVxZHgwdTFiQXBRZytBRzh4azExY2VONW5tSDA5OCtQcnRBSXVJdmdBWENKODNuZjZaYTNzWlE2MTNYampoNW5zZ3NzUWZBQXUwN3ovRVNlR1BMUHo0N0x1cWgvVkNwaEM4QUc0akZuVTNuTG9PMXJacmJUK0tpbXAyYWtWUVBBQm1FZmI4ZStGSnpxNG9QR2FINU5vTmtjWllRckJCMkJPazRrSmFkNzNpRloyTXh0YWg0ZllBZ0dDRDhteFY2ZTN6RVNYZ2E1VFd0bXRmUDFOVWxDMlhpdjRqT0JEY3V6VjZiVnpiLzZydHV4WHQvT2Qyb0xQQ0Q0a1I0L1BhK2JFOXA3bVBWclpyYWh5cXhSV2JOUUt2aUw0a0J3OVB1KzFIMzlHVy9hcjMvV2d0dUFyZ2c5QVV2MGR4NTNZeDlNb0tOc2d4VlhidElLUENENEFpOUoyN0NsdDJhOTY2ejNhZ284SVBnQ0wwblgyTlprWUhkVEtia1dWV3lTM3NGSXIrSWJnQTdBbzV2U0dqbFBQYTJXL3lrMTNhQXUrSWZnQUxGcmI4V2VkbWVWYnZ2NUd5WXBtYXdXZkVId0FGbTE4cEU5Nkx1elZ5bTRtOU1vYWI5QUtQaUg0QUN4SlQvTStiZG5QOVByZ0g0SVB3SkwwdFI0TWZuVmp1TE1nM2lnNStYR3Q0QXVDRDhDU21DT0xCcnRPYTJXL2VNTTEyb0l2Q0Q0QVM5YmJZbnA5YmpEbjljRXZCQitBSmV0dE9hQXQrekhjNlIrQ0Q4bXhTVFZtTVJ0WGp3MzNhR1cva3RyZDJvSVBDRDRreHliVm1FT2ZROE9kUlpXYnRRVWZFSHhJamg0ZjV1RFNjR2RoZVpPMjRBT0NEOG5SNDhNY1hEbVozWWpsRmt0dVVaVldjQjNCQjJCWnhrZjZaWFNvV3l2N0ZWWnMwaFpjUi9BQldMYWg3alBhc2w5Uk9TZXorNExnQTdCc2c5MW50V1cvL1BnNmJjRjFCQitBWlJ0eUtQak1NNzVJaEIrSlB1QjNHY0N5RFhhN3MzV1pDVDBtdVBpQjRBT3diQk5qd3pJNjBLR1YvZktLYTdRRmx4RjhBRmJFcGVkOGVjVzEyb0xMQ0Q0a3h3SjJMR0NvOTd5MjdKZGJYSzB0dUl6Z1EzSXNZTWNDeG9iYzJiTXp0NkJDVzNBWndRZGdSY2FHM1ZuRUhzc3IwUlpjUnZBQldCR1hlbnpaZWNYQnI0eHd1STdnQTdBaW80T2QybkpCUkdLNVJkcUdxd2crQUNzeU9abVE4ZEVCcmV3MzFldUR5d2crQUNzMjV0Qm0xYkZjbnZPNWp1QkRjaXhuUUJJdUJWODJRNTNPSS9pUUhNc1prTVRvc0RzVFhLSTVCZHFDcXdnK0FDczJQdHlyTGZ0RnMvTzFCVmNSZkFCV3pPelo2WXBvTmowKzF4RjhBRllzTVRHcUxmdlI0M01md1FkZ3hSTGpJOXF5WHl5SDRITWR3UWRneFNiRzZmSEJIZ1FmZ0JWTFRMalQ0NHRreGJRRlZ4RjhBRllzNFZDUEx6RXhwaTI0aXVBRHNHSXVQZU9iVEl4ckM2NGkrQUNzbUV1ek9nays5eEY4QUZac3dxRWVYMktDNEhNZHdRZGd4ZHdhNnVRWm4rc0lQaVRISnRYd0NEMCs5eEY4U0k1TnFwR0VTMHNBWERwYkVITWorQUNzV0NUaXpvK1M4WkUrYmNGVkJCK0FGWXRrUmJWbFA0TFBmUVFma3VNWkg1S0lPRFFjUHViUUVVdVlHOEdINUhqR2h5U3lvcm5hc2g4OVB2Y1JmQUJXTEN2bVR2Q05EUk44cmlQNEFLeFkxSkhnTXp2UVRJd05hUVZYRVh3QVZzeVZIdDlRejNsdHdXVUVINUpqY2d1U2NDWDRodnN1YUFzdUkvaVFISk5ia0VRc3QxQmJkaHZwYTlVV1hFYndBVml4V0U2UnR1dzIzTmVpTGJpTTRFTnlESFVpaVZpdUs4SEhVS2NQQ0Q0a3gxQW5rc2pPTGRhV3ZjekNkUmF2KzRIZ0E3QmlzVHo3ZzIrZzg2UzI0THJJNnc4L3hEaFdHbXk0L29NU2I3aGFLN3NkL080WFpLUy9UYXZWRThzcGxOM3YvRTJ0QU13ME1Ub29lNzlwL243d0kzeXA2UEVCZ0lXaU9RVlNWTGxKS3l3RndRY0Fsb3JYdXpHcXROb0lQZ0N3bEFrK2w4NUNYQzE4WWdCZ0tUUGNXVml4V1Nzc0ZwTmIwb1RKTGVrVnlZcUZhOGZNQkpqcy9GTEpMMjJRL0pKNktZaXZDK3E0Zmhld09HWno2cXhvamxaMjZUajVncHg5ODJ0YVlURUl2alFoK05aT0xMZ0xMaWpiSUlYbFRWSmN0VTN5Z3pERThveVA5TXZvWUVmdzZnNWVuVEl4UGh5RXhKaE1Ca0ZoM3MycmR1YzdKYStvV3Y4Tit3ejNOc3VoSi84NGJHZEZzNE1icHpMSnppdVZuSUw0MUh0d0kyVnVwdkpLNm9LNkpQeStUREkrT2lEN3d0bWRXQ3lDTDAwSXZzeGh3cTl1NXc4UWdQTVlHK3FSa1lIVzRQZTRJM2h2RDk1Ync1QXpMeE5zeVZ6NTRPZkN3TEJWeTZIdnlJVkQzOVpxWVdhRW9hQnN2UlRFRzhNL1Q2WnRycTIxNDg5L1NmcmFqbWlGWkFpK05IRXErQjcvL2ZBSG91M0sxbDB2OWJzZmxKZ0R1NHdzVjJKOFJBYTZUc2xnNTZsd3dmWmcxK213RjdkY3VZV1ZzdVBlVDJsbHA4TlAvb2tNOVM3L09LTGNvTGRiVkxrNXVNSGFHcnh2bFdoMm5uNWw5WFNjZWtIT3ZzRnc1MklSZkdsQ2p5OHpSYlB6WmQxVlB4TDgzbHlqVjl6WDMzNDA2QTBjRHQ4SHU4N28xZFFvYjd4QkdxLzljYTNzWXphbFB2VEVIMnFWR3VZNWMxRVFnbVhyYnBDODR0VVpBcDVhelA3ZnRVSXl6T3FFVjh6cDJxZGUvVWZwYWQ2clY5eGtuczAxSC9pbTdIMzBzM0xzdWIrUzFpTlBwRHowaklMeUptM1pxZVBrODlwS25jSHVzK0huZmVpSlA1QWpULzlaMkJ0YlNhOTZNY3pzVGpPa2o4VWgrT0NoU1RuNThsZUN1MzMzemw0enorVE83WDFZOW4vbmQ0TWZ2bzhIUVovZUg3aG1BcEd0SmhQajBuWG1WYTNTd3d3bG15SEkvZC82TFRuejJsZlRPbkxpeWdqVGFpRDRrSnlqeHhLZGZmMmZ0ZVdHL3ZaajRiQjArL0Zud2gvcTZXWW1kZVFWMTJobG4rNXpiNlM5SnpiTjNKQjBubmxGRGdhOXdOUGYvNmR3cG15cWxkWmV3V0wyUmVKVGdyZk1KSS9lQy91MHNwdVpsWGpzdVMvSzJGQzNYa20vb3FvdDJySlR4K2tYdGJXS2dwdklyclBmbHdPUGZWN092dm4vWkh5a1Q3K3djdUhlblZWYnRjSkNDRDRrNS9CNWZHM0huOWFXdmM3diszbzRKWCsxRlZkdDE1WjlobnJPeVVESENhM1dobm0rZU9DeDM1UFdvMDhHZVpqUXF5dkQzcDJMUS9EQmEyWjRjSFNvU3l2N21CK2FiY2VlMG1wMTJUeVpZckhyOXRMTkRJRTI3MzlFRGovMXArSHp3SlVxcmJ0Q1cxZ0l3WWZrSEgzR042M1gwaG1lSnJUTkQ4MjFrRmRjRzI0Vlp5T3pVMHZ2aGYxYVpRYnozMlJtZ0o1NzgxK0RNQnpWcTB0bmx1c1VWKy9RQ3ZNaCtKQ2N3ME9kaHEwN1hweCs3ZjlxYS9XVk5WNm5MZnUwSEhsY1c1bW4vZVJ6Y3ZTWnZ3aVhveXhYdlA0cWJXRStCQis4WjU3MzJLYXY5ZUNxVG1TWnJhekJ6dUF6MjdHWjJaeVpiS2puZkRqMGFSYlhMNGNKdmtoV1ZDdk1oZUJEY280UGRZNE45NjdvRG5zdGRKeCtXVnVycjdCaWs3WERuTFpzNnpVMjNCTU9mWm9kZDVZcUs1WWJicCtHK1JGOFNNN3hvVTdEYk1oc2s3NldBOXBhZlJVYmJ0YVdYYnJQdlNiOUhjZTF5bnhtWDlYanovKzFkSjlmZWcrMWxObWRDeUw0Z0VBcTExT2xteGtLVzh5cENla1FqZVZaK1F6SmhNaTV2ZitobFYxT3YvcVBTKzc1eGV1dVpMaHpBUVFma25OOHFOTVlHN1luK0FhN1RtbHI5WlZ2dUNrOEJOZzJ6UWNldGVybVppYXp4dS9rUzE5ZTByckRxZUZPOXU2Y0Q4RUhCQ2JHaDdTVitjekJvMnVsY3VQdDJyS0hPWDZwL2NTeld0bko5UENQdi9pM1N6byt5YWNUU0phSzRFTnlIanpqbXhpMUovZ21FeFBhV2wxbGpkZExUa0daVm5Zd2U1YXU1YktQVkFxZitUMzNWeks2eU5tOEpiVzd0SVhaQ0Q0Z1lINm8yR0pOZ2krNCthblpkcDhXOWpCRG5LTURxZDhRZXEyTWp3NkdKNHNzNXMrQWVSNWJXcnRiSzh4RThBR0JsZXlXc2ZwVy81bHJXY08xNFduck5qRkRuRzNIdnFlVk80YTZ6NFpIVHkwR3N6dm5SdkFCV0ZCV05GdnFkajJvbFIzTWM5QlRyLzZEVnU0eEcxeWJVeDZTTVh0M01ydnpjZ1FmRUpoY2cxN1VjazJ1OGl6Ym1tMzNTM1plaVZhWnp3d0RubmpoYjJSc3FFZXZ1T25zRy8rU2RIY1hjOU5TVXIxVEswd2orSUJBSlBqSEZwRlZuR3hraGplcnQ5NmpsUjNPdlA1VkdldytxNVc3ekV6UE0rSEVuWVZ2aE9JTjdOMDVHOEdINUR4WXg0ZTVOVjd6UG0zWm9mWG9FOUoxOWpXdDNHY0N2djNFODFyTnJjU2N6TTV3NXlVSVBpVG53WElHbTRZNlYwdEYwNjFTV0xGUnE4elhkZlpWYWQ3L0RhMzgwWHpnR3dzdXpnK0hPMnRZMmpBVHdRZmdNam41WlZLLys5MWFaVDdUeXp2OWZUZlc2eTNWMUhac0M4L3k1R1QyU3hGOGdFR0g3eTFtV0d6anpUOFo5QlJ5OUVwbTY3bXdWNTkxK2NzY3RXUU9KcDZQV2N4dWVuNllRdkFoT1o3eGVhWCtpaCtVdkpJNnJUSmI5L2szNWVSTFh3bjNzL1RkMlRlL051L2ZWUk42eFRYTTdweEc4QUY0Uy9uNm02U3k2VGF0TXBzNXJmelVLMyt2RlViNjI2VHp6Q3RhWFk3aHpvc0lQaVRud2VRV3hqcEZTb0llUWVQVjc5VXFzMTA0K0MwNTkrYS9hb1ZwRnc1OWE5N3R6TXp2TDhPZFV3ZytKTWRRcC9PS0tyZkl4cHQveW9xYm5ET3YvN08wSEg1TUs4eGtGdTIzbjNoR3Ewc3h1L01pZ2cvSmVkSGo4MWR4OVE3WmRNdEh0Y3BjWnNyKzRhZitWRHBQdjZ4WE1KZVdJOStkZCsvWmVBUERuUWJCQndSV2V4dXdsVWpsZjJ2WnV1dGtVOURUeS9URFpjMkcwNGVlK0NNWjZqbW5WekNmaWRGQmFRM0NieTRNZDA0aCtJREFhbTREdGxLcCttK3QzZkZPV1gvZEJ6SytSMjlPV0RqNnpGK3M2UUc4dG1rNy9zeWNSMjJaR3h6TzZTUDRBT1hQYzB5elRxL3BwbzlJemJaNzlVcG1taGdia3VQUC83V2MzL2NmZWdXTFpVS3YvZVRjVzVreHU1UGd3Mkl3dWNVWmVjVTFzdlgyVDJiOEFhV0RYYWZrMEpOL0xIMXRoL1VLbHFydDJGUEJYOTNMMXplYUNTNitEM2NTZkVqT2c4a3RybWU3K1VGbnRpRGJmczlEa2g5ZnAxY3prNW14ZWVUcFA1ZXhvVzY5Z3VVWUgrbVhyak92YW5XUjZmR2JqYXQ5UnZBQmppdXEzQ3c3M3Y0clVyWDVMcjJTbWZyYmo4aUJ4ejRmcnRGRGFwalRLdVlheHZmOXFDS0NEM0NVMld0ejNWVS9JcHR2K3huSnpvL3IxY3d6T3RnbEoxLytpaHg3N2t0QnUwT3ZJaFhNYmk2OUYvWnJkWkU1bkRZcmxxdVZmd2crSU9UT1dLZjVnVmE5OWUyeTg3NWZDNDhXa2d3OVpOZXN5enUvOTkvbDRIZS9JRDNOZS9VcVVxMzl4TFBhdXNnTWQyYjZjOTUwSXZnQVIwU3o4OE1sQ3JzZStJelU3ZndCaWVVVzZWY3lpNW10MmJ6L0VUbncyTzlKMi9HblpUSXhybDlCT3ZTMUhaV3g0VjZ0TG9yWCt6dmNTZkFoT1M5bWRkcjcvMmdtcnRSc3Z6L280WDA2WEtJUWplWHBWekxMeE5pd1hEajRUZG4vbmQrVjFxTlBTbUppVEwrQzlKcVV6bE12YXZzaXMyT1ByOE9kQkI5Z3FmelNCcW5iOWFEc3ZQL1hwWGI3QTBHUEwzTUR6NXdTdnYvYnZ5MHRoeCtmYzJFMTBxdmoxQXZCcjVmZTNQazgzRW53SVRrZjl1cTBxTU5YVkxsVmR0ejdLZGwyMXk5STlaYTdKWlpUcUYvSkxHWjRyZm5BbzJIZ3RSNTVZdDc5STVGKzV2ZWl2LzJvVmhmNXVwaWQ0RU55TEdEUEtNWFYyeVMzc0ZLcnpEUFFjU0tjcFRrVmVQTnZtSXpWMVhIcThzMjlpNnUzZXpuY1NmQUJXTEdKOFdIcE9QbUNISHJpRCtYb3MvK0xXWm9acUtkNVR6aXhhS1p3dUxQT3Y4WHNCQjhRbUxSNGNzdGFNbXZFVE85dTd6YytLMmZmL0pvTTk3WG9WNUJwek96WnJuT3ZhWFdSajhPZEJCOFE4T0FwWmtxWW1aaTlGL2FGaDhIdWZmUTM1TVJMLzV2ZW5VVzZ6M3hmV3hjVlYyM3picmlUNEFNQzlQZm1aeVpHZEo1NVJVNjgrSGV5NTVGUEIySDM1ZkF3Mk5uRFpzaDhBMTJuTHRzZHh3eDN4dXV1MU1vUEJCK0FTNWlnTTVzYm0xNmQyVlhGVEZJNTg5cFhwYmZsZ0g0SGJOWTFSNi9QdDVQWkk2OC8vQkEzdTJtdzRmb1BPdk9IYWJEcmpDUVM5aTgyTm50WFJtTTV3WHV1WkFYdlpxY1RpSXdPZEVoZjJ4RVo2RHdlbm5SdTlzNkV1M0lLS21UbmZiK3ExUlJ6ZkpFWnV2WmxqU1hCbHlZdUJSL2NZWTZxR2VvNUY3ek95bUQzdVNEb1RvVFg0SmN0ZDN4U0NzczJhRFhGOVBETkVMWVBDTDQwSWZpdzFrWUhPelhrenV2N3VUbjNiSVIvek9ibDV1U09tZnBhRDhueEYvNUdLN2NSZkdsQzhHRTFtRm1Xb3dQdE1qTFFFUjVCWXlZdURQZTN5bkJQYzdpMkRwaUxHZWJmL1k3L0hrNXNtV2FHTy9kOTYzL0l4T2lnWG5FWHdaY21CQi9TcGZ2OG0rRlJNK2JaM05od2oxNEZzRmpNNmdRc005UjlSZ1k2amhONndETFI0MHNUbDNwOHA3Ly9UODcva0MwczN5aTFPOTZoVldZelo5bVpZMzBBTEEvQmx5WXVCWjlaeTJXZUg3bk03RmZZZE9PSHRjcHNCQit3TWd4MUFnYTNmNEEzQ0Q0QWdGY0lQaUJFbHcvd0JjRUhBUEFLd1FjQThBckJCd1FZNkFUOFFmQUJBTHhDOEFIR1pFSWJtVzl5a3Y1cHV0VnN2MTgydisxbkwza1ZWVzdXcjhKMkJCOWdSQ0xheUh3UmkvNWJiWlZmVWlkRkZac3VlY1Z5aXZTcnNCM0JCd0R3Q3NFSEdBd2ZZaVo2MVU0aitBQmdsa2p3RDl4RjhBSEFaUWcrbHhGOEFEQWJRNTFPSS9pQWdFMUxCRmpPa0g1eno1emxjM2NGd1FjRWJMckJaemxEK2tXeVl0cWFpYy9kRlFRZkFNd1N5WXBxQ3k0aStJQUFvNGVZS1JLWnE4Y0hWeEI4QURBTFBUNjNFWHdBTUF2QjV6YUNEd2d4MW9tTENENjNFWHdBTUV0V05GdGJjQkhCQndDelJHTjUyb0tMQ0Q0QW1DVXJscXN0dUlqZ0F3eldNMEFSZXU0aitBQmdoaWpCNXp5Q0R3Qm1vTWZuUG9JUENOa3oxTWttMWVrVnpTN1ExbXg4N3E0ZytJQ1FQUnNRczBsMWVtWG5GbXRyTmo1M1Z4QjhRSWk3ZVV5SjVjMFhmSEFGd1FjQU04emY0NE1yQ0Q0QW1JRWVuL3NJUGlEQWZCRk1vOGZuUG9JUEFHYklLU2pYRmx4RjhBRWh1bnlZa2x0VXJTMjRpdUFEQUpWVFVNR1JSQjRnK0FCQTVSWFQyL01Cd1FlRUdPb0V3NXkrSVBnQXk3QmxXZnJrbDlScGF5NTg3cTRnK0FETHNHVloraFJXYk5MV1hQamNYVUh3QVVBZ2xsc3NPUVZsV3NGbEJCOEFCSXFydG1vTHJpUDRBSVBuWnQ1YmVKZ1RMaUg0QUVBaVVscTdTOXR3SGNFSEJPanYrYTJ3b2lsOHhnYy9FSHdBdkJkdnVFWmI4QUhCQjRUbzgva3FFc21Tc29acnRZSVBDRDdBc0NqM1dNQ2VXc1hWMnlTYW5hOFZmRUR3QVlaRmE1Tlp3SjVhZFR2ZnBTMzRndUFERERwUlhpcXR2MHJ5RnR5bURDNGkrQUI0eVR6YnE5LzFvRmJ3Q2NFSGhPenA4dkdNTHpVcU43NXRpYWV0ODdtN2d1QURMTU16dnBYTExhcVN1aVgzOXZqY1hVSHdBZkNLT1dHOTZjWVBjZEs2eHdnK3dMQm8rSkNoenBVeHN6anppbXUxV2dvK2QxY1FmSUJoMGZBaFE1M0xWN1g1cnVCMXAxWkx4ZWZ1Q29JUE1PaEZPYytFWHYzdWQyc0ZueEY4UU1DbTJHT29jK2xxdHQyWGd0RGpjM2NGd1FjRWJCckVZcWh6OGJKaXViTHhwbzlJN1k1MzZKV1Y0SE4zQmNFSEJMaVhkNC9aa1dYNzNiOGtKYlc3OVFvd2hlQURMTU5RNThLeW90bFN2ZVh1TVBTV3RrQWR2aUQ0Z0pBOVljSlE1OXlpMlhsU3MvMSsyWG4vcnk5amNUcDhRdkFCSVh1Q2p4N2ZwZkpMRzZSKzkzdGsxd08vSWJYYkg1QllUcUYrQlpnYndRZUU3T2xGMGVPVGNBalR6TlRjZnM4dnk3YTdmaUZjbTJlR09JSEZJUGdBdzZKZWxHODl2bWdzVHdvck5rbmx4dHRrM1ZVL0tsdnYvRyt5ODc1ZkMyZHE1aFZYNjNldEJucmFyaUQ0QUt5NTNLSnFLYTdhSnVYcmJ3cWYwelZlOHo3WmRPdkhaTmNEbjVVcjN2WGJzdVZ0UHlzTlYvNndWRFRkSWdYeFJ2MjNnT1dKdlA3d1E5ekdwTUdHNno4bzhZYXJ0Ykxid2U5K1FVYjYyN1J5VTBGOFhkQ1QrSG10TWx0ZjIyRVo3RHlsbFIyeVlqa1N6UzZRYUU1KytCN0xubnFQNWhSWU0wUjU2cFYva083emIyZ0ZteEY4YVVMdzJjWDBJc3dRR2pBZmdzOGRESFVDSWU3L0FGOFFmQUFBcnhCOEFBQ3Y4SXd2VFhqR1p4ZXpDTnFzQjdPQmpaTmJab3RFczZjbXVPUVVTRFI0enlrb0MxNFYrdFhNZE9xVnY1ZnU4MjlxQlpzUmZHbEM4Tm5GcHVBN3YrL3IwbmJzS2EzY2tsdFlLZG41WlJMTExaSllFSXJtdmJCOGd4U1VOYTM1N0UrQ3p4ME1kUUxJR0NNRDdkTGZma1M2ejcwbTdTZWVsUXNIdnlYSG52dVM3SG5rMDNMMG1iOEk2LzZPNC9yZHdQSVFmSUJsZk4yeWJLRHpwTFFjZmt5T1BmdVhzdWNibjVHemIveUxESFN0NXBBdlc4VzVndUFEWUozRStJaDBuSHBSamo3OTUzTG9pVDhNZTRjVDQ4UDZWV0JoQkI4QXF3MzN0Y2k1UGY4bSs3LzlPM0p1NzcvTDZHQ25mZ1dZRzhFSHdBbW1GOWgrL0drNStQanZ5L2w5L3hIV3dGd0lQaUJreitSbXp1TmIyT1JrUXRxT2ZVOE9QdkVITXRoMVdxK21BcCs3S3dnK0FFNGFHK3FSSTAvL21YU2VlbEd2QUZNSVBzQXlIRVM3TkdmZStCZHAzdjlJMEZwcGo0M1AzUlVFSHhDd2FmaVFvYzZsYXozNlpCQ0FYOU5xdWZqY1hVSHdBWUdJUlhmejlQaVd4d3g1dGh6NmpsYkx3ZWZ1Q29JUENFeHlOKytGQzRlK0xUM05lN1NDcndnK3dESU1kYTdNNmUvL2t3ejN0V3ExRkh6dXJpRDRBTXN3MUxreWlZa3hPZm55bDJVeU1hRlhGb3ZQM1JVRUgyQXd1Y1VyNXJTUjVnT1BhZ1hmRUh5QVlWRXZpaDVmYXJTZmVFWkdCN3UwZ2s4SVBzQ2d4K2NkTTlSNTRlQTN0WUpQQ0Q3QU12VDRVcWY3M09zeVB0S25GWHhCOEFFaGVudytNdnQ2dHA5NFRxdGsrTnhkUWZBQmxxSEhsMXFkcDE4S2ZsMU1xUEc1dTRMZ0ErQzFzZUZlNldzOXJCVjhRUEFCOEY3WHVkZTBCUjhRZkFDODE5dThMM3plQno4UWZFREFwZ2tqVEc1SnZZbnhZUm5vT0tiVmZQamNYVUh3QVFHYjVvc3d1U1U5K3R1UGEycytmTzZ1SVBpQWdFMmRLSHA4NmRIZlRvL1BGd1FmWUJsNmZPa3gySDA2eVIwUW43c3JDRDRBQ0pndHpJWjZ6MnNGbHhGOFFNaWVZU3lHT3RObnNQdU10dWJDNSs0S2dnK3dERU9kNldPT0s1b2ZuN3NyQ0Q0QVVNTjlMZHFDeXdnK0FGQWpBKzNhZ3NzSVBnQlFZK0hCdER6TGN4M0JCeGdXVFJoaGNrdjZtRzNMUm9lNnRacU56MzJtdk9JYUthcmNmTWtyTzY5VXY1clpDRDdBTWt4dVNTOXpXc1BjK054bjJuanpSMlh6YlIrLzVHWEMwQVlFSHdETU1EN01pZXpKNUpYVVNVNUJtVlpUVEcrNXZ5UFp0bStaZ2VBRExNTlFaM3FOamN6WDQrTnpuMVphdTB0YkZ3MTJuWmJKeExoV21ZM2dBeXpEVUdkNlRZd09hbXMyUHZkcHBiVlhhT3VpZ1k0VDJzcDhCQjhRbU9SdUhtcDgzdUNEa1oxWEl2bnhkVnBkMUovMFdLZk1RZkFCQnJNNm9TWkdCN1ExRzUrN01WZHZ6eGpvUEttdHpFZndBU0Y3aHJFWTZrd3ZjeWp0M1BqY2pkTDZ5NE52c091TUpNWkh0TXA4QkI4QXpEQXhObC93SVN1V0s0VVZtN1c2eUtaaFRvUGdBMElNZFdKS1l0N2c0M012cmJ0Q0lwSExZeVA1SWI2WmhlQURMTU5RWjNvbEVtUGFtbzNQUFY1M3BiWm1DRzdFQmpydG1kRnBFSHhBaUI0ZnBpUW1SclUxbTkrZmUxWTBXMHBxZDJ0MTBWRFBPYXVlN3hrRUgyQVplbnpwTlRreDN5SnN2ei8za25sbWM5cXlXOHRNQkI4QXpKQ3daUGVSMVZiV2NMVzJMbVhieEJhRDRBT0FHU1lURTlyQ05ET2JzN2g2aDFZelRFNWFON0hGSVBnQWc4ZG1VTGJzTjdtYTR2VlhTU1FycXRWRlE3M04xajNmTXdnK0lHRFRsbVZNYmxrci9uN3U4WVpydEhXcC92YWoycklMd1FjRWJKcTJ3T1NXOUp1NzErZm41eDdMTFpLaXlpMWFYY3FtamFsbkl2Z0FZQlp6dGh5bWxEVmNHOXhzelIwVi9aMzJ6ZWcwQ0Q0Z1lOTWdGa09kNlRlWklQaW14ZGRkcDYxTERmYzJMM0NFVTJZaitBRExNTlM1R3JpNU1ISUtLcVJnamlPSURCdlg3MDBqK0FBQWN5cGZmNE8yTG1mak1vWnBCQjhRc3VjT242SE85SnY3TS9idmN5OWJkNjIyTG1mand2VnBCQjlnR1lZNjE0cGZuM3RoeGFad3FITXV3MzB0MWo3Zk13ZytBTUJseWhzWEdPYTB1TGRuRUh5QXdlZ2g4SlpJVmt6aTgrek5hUXkwMnp1eHhTRDRnQkRQK0RDVDM4LzQ0dlZYU2xZMFI2dkwwZU1EQU1mTXZmK2tQOC80eWhwdjFOYmxodnRhWlh5a1h5czdFWHlBWlpqY2tuNDJUOXhZcVp6OHVCUlh6YjFGbVRGZzhmcTlhUVFmQU13eVB1WnY4RlZzZkZ2dzYvdzNWN1lQY3hvRUh4Q3c2Ymtaei9qUzcvemVmNWRqejMzeGtwZXRKeEVzVmZuNitZYzVEWnNYcms4aitJQ0FUY09IREhXbW4xbW5abjdBejN5Tmp3N29WOTFsRnF6SGNncTF1dHpJUUx1TWovUnBaUytDRHdqUTR3TkVLcHB1MWRiY1hPanRHUVJmbWtTeTNQbG81enVTQkd1REhoL1NJYSs0V2dyTE4ybzFOeGNtdGhqOFJFc1Rzd0RVRlM3OXZ3Q1lXOVhtdTdRMXY3NjJJOXF5RzhHWEpsblJiRzNaTDR2Z0E1eVdGY3VWc25uTzNaczJPdERoeFBNOWcrQkxFNmQ2ZkZHQ0QzQlpaZE90U1g5bTJYeiszbXdFWDVwazV4WnJ5MzZ4bkNKdHVZekpMZkRYMU5xOWhibXdmbThhd1pjbTJRVmwyckpmZGw2SnRwQUptTnlDVklvM1hCdnUxcEpNWCt0aGJkbVA0RXVEV0U2QlV6TWhzL05MdGVVd2VsSHdWTTIydDJ0cmZxT0RYYzQ4M3pNSXZqVElLU2pYbGh0eTh0M3B2UUs0cUxoNnUrUVYxMm8xUDVlR09RMkNMdzN5NDQzYWNrTitmSjIyQUxpa2VzdmQybHFZSyt2M3BoRjhhVkRnV0ZDWUhtdzBPMThyckRVbXR5QVZ6TStwb3NyNVQyR1l5YlY5U2dtK05DaXEzS3d0ZHhSV0xMeWpBMVlQazF1UUNqWGI3dFBXd3N5elBmT016eVVFWDRybGx6WUVQYVFLcmR3UnI3OUtXNjZpRndWLzVCWFhTRW50THEwVzVzcHVMVE1SZkNrV2I3aEdXMjRwcmIxQ1d3QnNWN1A5L3VEWHhZMGN1TEl4OVV3RVh3cEZzcUpTc2VGbXJkeGl0alJLZGs0WGdNeVhXMWdwOGJyRmorQzROckhGSVBoU3FMenhScWNuZ1N4bUUxdGJNZEFKWDlUdWVJZDVVS3pWd3N6elBYTUduMnNJdmhReCs5eFZiNzFIS3pkTlBSZllyUlVBMjVnMWUwdDVITlBYNXVhcDh3UmZpdFJmOFI3bkZxN1BwZkhxOXdhOTJqeXRITUlTQVhqQS9KeGFDaGVIT1EyQ0x3Vks2NjZVeXFiYnRISmJMTGRJMWwvN2ZxMEEyS0t3dkVtS3E3WnB0VGl1N2RneWplQmJJYk5tYjhNTkg5VEtEMmE0cy9HYUg5TUtxNDBGN0ZpT2hpdC9TRnVMRXo3ZjYyL1R5aTBFM3dyRUc2NldUYmY4dExpMElmVmlsYSsvU2RaZjk0RndKaXRXRnd2WXNWUmw2NjROMXhndlJYKzdtOE9jQnNHM0RPWjA5Zm9yZmxBMlhQOUJwdzZjWFNwell2T1cyejhodVVWVmVnVkFwakUvbytwMnZWdXJ4WE4xbU5NZytKYkkzRG50dVBkWHBXclRIWHJGYndYeFJ0bng5bDhKL21LOXkvS2xIQXdmd2sxVm0rOVkxcG1hQXdTZjM4d2hqVFhiN3BWZDkvKzZyTC91SnppWWRRN1ZXKzZSSzM3Z3Q2VHgyaCtYZ2pLM1RxY0FiR1Z1UnF1M0pqOXZiN2FKMFVFWjdtdlZ5ajJSMXg5K2lGdmRXZkpMNjhQMUxtWk12TGg2UjlDdTFxOWdzY1pIQjZTMzVZQU1kcDJXNGQ1bUdRcGVpZkVSL1dybWljYnk1SXAzL2JaV21hMTUveVBTZXZSSnJZRDVOVjd6dm1YdHVOUnovazA1K2NyZmErVWVyNEl2bGxzYzNnR1pFOUtuM2dzbEdyVE45YnlpYXNrTkFzNXM1NFAwR0J2dWxaSCtsaUFJVzRKMmo0eVBEUVYzbGdOaFNFNk1EWWQzbVJOamc1S1lHTk4vWS9VUWZIQk5ZZGtHMlhMSEo3VmFtbk43L2szYVR6eXJsWHVjRFQ2ejBMcmMwWDB6ZmJQLzI3OFRCbVU2RVh4d2labHB2djJlaDVZOThlelFFMzhrdzMwWHRISVB6L2lBd0NTVFcrQ1FxaTEzTFR2MHBwN3Z1UnQ2QnNFSFdJWUY3RmlJMlRxeFpwczVkbWg1WEY3R01JM2dBeXpEQW5Zc1pQMTE3dy9YR2k5WHY2UDdjODVFOEFHQUk4eU9Tb1hsRzdWYW5nR0hkMnlaUnZBQmdBUE1CdkwxdTVkMitzSnNac25SVU85NXJkekZPajRnWUlhR3JuendjMXBsdHZQN3ZpNXR4NTdTQ3BpeThhYVByUGk4eko0TCsrVGtTMS9XeWwzMCtJQ1FQYy9OZU1hSDJTbzIzSktTUTZKZFBYOXZOb0lQQ0RId0FUdVpaUXNOVi80bnJWYW12OTM5R1owR3dRY0FsakxIZ2pYZCtLR1VuQkxqeS9NOWcrQURMTU02UGt5cjMvWHVjRi9oVkFoN2U1NzgyU0w0QU12d2pBK0dPUWk3Y3RQdFdxMmNEK3YzcGhGOEFHQVowOHRiZiszN3RVb05sOC9mbTQzZ0F3SU1IOElXNWtTWlRiZDhOQ1hQOWFhWjUzdURQZWUwY2gvQkIxaUdrUFpiMDQwZmx1ejh1RmFwMGQ5eHdwdm5ld2JCQjFpR1ozeitNZ2ZMRmxWczBpcDFmRm0vTjQzZ0F3QUxWRzIrYzFtbnFTK0dEeWN5ekVUd0FVQ0dLNjdhRmk1ZFNJZkp4TGdNZFovVnlnOEVIeERpdVJreVUwRzhVWnB1K29nWjQ5WXJxV1dXTVV4T0pyVHlBOEVIQUJrcXI3aEdOdDM2c1JXZHI1ZU1MOXVVelVUd0FVQUd5aW1va00yM2ZWeWkyZmw2SlQxOG05aGlFSHhBWURJeG9hM014M0lHOStYa3g0UFErNW53akwxMFNreU15VURuU2EzOFFmQUJBYlBacnkxWXp1QzJuSUp5MlhMSHp3WHZaWG9sZlh3TVBZUGdBd3g2VWNnQTVwbmUxaUQwc3ZOSzlFcDYrVGpNYVJCOFFNQ21XVzBNZGJvcFA3NU90dHoraWJRUGI4N2s0OFFXZytBREFwR0lQWDhWR09wMFQybnRidGthaEY2Nko3TE1aTmJ2RFhhZDBzb3ZCQjhBcktHYTdmZEwwMDBmVHVtbTA0c3gwSG5LdS9WNzB3ZytJTUJRSjliQ2h1dC9RbXEzUHhDMFZyOFgzOTkrVkZ2K0lmZ0F3NkxodzlYdUdTRDFzdk5MWmR2ZHZ5anhobXYxeXVyemRXS0xRZkFCbG9uRzByZUxCOUt2b0d5RGJMdnJseVMvcEY2dnJENHp3akhRZFZvci94QjhnR0hSOEdGV05FZGJzRTNseHJmSjFqcytLYkdjQXIyeU5zejZQVE81eFZjRUgyQVpjd0kzN0JMTEtaU05OLytVTkZ6NVEzcGxiUTE0dW94aEdzRUhCTXdXVWJiSUs2N1ZGbXhRWEwxZHR0L3prSlRVN05RcmE4K2N5T0F6Z2c4STVCWlZheXZ6MmZUZjZyT3NXSzQwWFBYRHN1bVduMTdWUmVtTDRldjZ2V2tFSHhESUs3R25GMldPcURHN2ZDQnptZG1hTysvOWxGUTIzYVpYTXNkQXg0bHdjMnFmRVh4QW9LaGlrN2JzVUZwN2hiYVFTY3pHMHVaVUJiTStMNVpickZjemkrL0RuQWJCQndRS0xRdStlTVBWMmtJbU1KTlh6TVNWbmZkOVdvb3F0K2pWekRUUTRmZkVGb1BnZy9mTXBJUFYzQ014RlhJTEt5VmVUL2l0TmZNY3IzYkhPNExBKzdWd3FVS21NK3YzK2p0T2FPVXZnZy9lSzJ1OFhsdDJNWHM4WW0yWTU2eFZtKzhLZTNnMTIrNExBOUFHZzEybnZWNi9ONDNnZzlleTgwb2xYbmVWVm5ZeFo3ZlY3WHBRSzZ3R3MxMWMxZVk3dzhDcjMvM3VOVitJdmxSbVlnc0lQbml1ZXVzOVZ1M1RPVnYxbHJ1bHBIYVhWa2dYOHd6UGZOYTc3amVCOTU2TVc1NndXUDA4M3dzUmZQQ1dtZEJTdVRIenBwc3ZWZE1OSDVMU3VpdTFRcXFZTXhwTGFuZUhSd2J0ZXVDelllODZVMmRxTHNya1pMaFZHUWcrZU1yc2p0OTA0NGVDbHYySHVrYXlvdUgvUy9YV2UvVUtWaUsvdENFY3h0ejF3R2RrNDAwZkNaZU9tTS9ZZG9QZFp5UXhQcUtWM3lLdlAvd1FoM3ZCSzlsNUpiTHg1bzhHUCtEV2JuZjhkQmtiNnBFTEI3OHBuV2RlMFN0WURQT3N0MnpkZFZLKy9nWm5kOFpwUGZxa05POS9SQ3UvRVh6d2lsbi90dTZxOTBvME8wK3Z1R2xzdUVmYWpqMHRIYWRlNEM1L0h1Ykd4eXhsS2FuWkxRVmxqWHJWWFNkZS9GdnBiVG1vbGQ4SVBuZ2hwNkFpQ0x3Zmt1THFIWHJGRDJacnFyNjJ3OUxYY2tDNm0vZkl4T2lnZnNVL1puTnZNNHhwUXM0OEV6VTlmNS9zK2NabnVBbFNCQitjWmRaYUZaWnZETy9xS3pmZHJsZjlOdGg5VnZwYUQwbC8rNUhnNWVZTXYzQXYwNUo2eVF0NmRQa2xkVUhZclF0ZWRWNmZYRDhVL0w0Zi90Ny8xQW9FSDV4aGhpL05zNXJjb2lxSk4xekR6aWFMTURyVUpXT0QzZUg3NkdDWGpBLzNoc09rVXkvVDd0WHZ6RHhtaG1WdVFibmtGRllFUGZyeU1PUk0ySmxkYlhDcHRtTlB5Zmw5WDljS0JCOHlXbEhsWm0wRmQvS3h2SEQ5Vkhid2lrUjBsbDBrb3NOWDY4TzFWa2c5RTM3akkzM2hhMnpZdlBmS3hQaUlKTVpISlRHaEwyMHZUeVRjK2NTY0xKOFZDMTdtUFh6RkpEcnJlaVI0WmVjVmgwUFhwbWVIeFRueDR0OUpiOHNCclVEd0lXT1pJTnY5enQvVUNzQ3lURTdLbmtjL3kvTzlHVmpIQndBT0crcHRKdlJtSWZnQXdHRnNVM1k1Z2c4QUhEYlF6c0d6cy9HTUR4bkx6TkpzdXVrbnRRS3dIQ2RmL29yWDZ6Zm5RdkFCQUx6Q1VDY0F3Q3NFSHdEQUt3UWZBTUFyQkI4QXdDc0VId0RBS3dRZkFNQXJCQjhBd0NzRUh3REFLd1FmQU1BckJCOEF3Q3NFSHdEQUt3UWZBTUFyQkI4QXdDc0VId0RBS3dRZkFNQXJCQjhBd0NzRUh3REFLd1FmQU1BckJCOEF3Q3NFSHdEQUt3UWZBTUFyQkI4QXdDc0VId0RBS3dRZkFNQXJCQjhBd0NzRUh3REFLd1FmQU1BckJCOEF3Q3NFSHdEQUt3UWZBTUFyQkI4QXdDc0VId0RBS3dRZkFNQXJCQjhBd0NzRUh3REFLd1FmQU1BckJCOEF3Q3NFSHdEQUt3UWZBTUFyQkI4QXdDc0VId0RBS3dRZkFNQXJCQjhBd0NzRUh3REFLd1FmQU1BckJCOEF3Q3NFSHdEQUt3UWZBTUFyQkI4QXdDc0VId0RBS3dRZkFNQXJCQjhBd0NzRUh3REFLd1FmQU1BckJCOEF3Q3NFSHdEQUl5TC9INC9VdHZzeHcwUWxBQUFBQUVsRlRrU3VRbUNDIiB4PSIyIiB5PSIyIiB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIGNsaXAtcGF0aD0idXJsKCNjKSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiLz4KPC9zdmc+" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/branding/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/branding/favicon.svg" />
+  
+  
+  
+  
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto y Ubicación | Agenda tu Valoración Gratis — Pura Estética Cancún</title>
+  <meta name="description" content="Agenda tu valoración gratis en Pura Estética Cancún. Av. Sayil SM 6 M 05 Local 202, Zona Hotelera. WhatsApp: 984 266 0085. Lun–Vie 10–18h · Sáb 10–16h. Fillers, Botox, Rinomodelación y más." />
+  <meta name="keywords" content="contacto Pura Estética, agenda cita Cancún, valoración gratis medicina estética Cancún, clínica estética Zona Hotelera Cancún, WhatsApp medicina estética Cancún" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://puraestetica.com/contacto.html" />
+  <meta property="og:type"         content="website" />
+  <meta property="og:title"        content="Contacto — Agenda tu Valoración Gratis | Pura Estética Cancún" />
+  <meta property="og:description"  content="Agenda tu valoración gratis en Pura Estética, Zona Hotelera Cancún. WhatsApp: 984 266 0085." />
+  <meta property="og:url"          content="https://puraestetica.com/contacto.html" />
+  <meta property="og:image"        content="https://puraestetica.com/assets/images/branding/og-image.jpg" />
+  <meta property="og:locale"       content="es_MX" />
+  <meta property="og:site_name"    content="Pura Estética" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- TailwindCSS compilado -->
+  <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="overflow-x-hidden">
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <div id="page-loader" aria-hidden="true">
+    <img src="assets/images/branding/Pantalla_carga.png" class="loader-logo" alt="Pura Estética" />
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+
+  <header id="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+
+          <span class="nav-logo-imgs" aria-hidden="true">
+            <img src="assets/images/branding/Logo_header_inicial.png" class="nav-logo-inicial" alt="" height="44" />
+            <img src="assets/images/branding/Logo_header_final.png"   class="nav-logo-final"   alt="" height="44" />
+          </span>
+          <span class="nav-logo-text">Pura Estética <span class="nav-logo-sub">Expertos en Fillers</span></span>
+        </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nuestro-trabajo.html">Nuestro Trabajo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/529842660085?text=Hola%2C+quiero+hacer+mi+valoraci%C3%B3n" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Reserva ahora</a>
+      <button class="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Menú móvil">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="nuestro-trabajo.html">Nuestro Trabajo</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="https://wa.me/529842660085" target="_blank" rel="noopener" class="btn btn-primary mt-md">Reserva ahora</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section style="background:var(--color-darker);padding:10rem 0 5rem;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%, rgba(201,158,72,0.1) 0%, transparent 65%);" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Inicio</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+          <span style="color:#fff;">Contacto</span>
+        </nav>
+        <p class="section-tag reveal" style="color:var(--color-gold-light);">Estamos para ti</p>
+        <h1 class="section-title section-title-light reveal" style="font-size:clamp(2.5rem,6vw,5rem);">Agenda tu<br><em>Valoración</em></h1>
+        <div class="gold-line reveal"></div>
+        <p class="section-subtitle section-subtitle-light reveal">Contáctanos por WhatsApp, correo o visítanos en nuestra clínica en la Zona Hotelera de Cancún.</p>
+      </div>
+    </section>
+
+    <!-- Contacto grid -->
+    <section class="section" style="background:var(--color-light);">
+      <div class="container">
+        <div class="about-grid" style="gap:5rem;">
+
+          <!-- Formulario -->
+          <div class="reveal-left">
+            <p class="section-tag">Escríbenos</p>
+            <h2 class="section-title">Envía un mensaje</h2>
+            <div class="gold-line"></div>
+            <p class="section-subtitle" style="margin-bottom:2rem;">
+              Cuéntanos qué tratamiento te interesa y te responderemos a la brevedad para confirmar tu cita.
+            </p>
+
+            <form class="contact-form" action="forms/contact-handler.php" method="POST" novalidate>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+                <div class="form-group">
+                  <label class="form-label" for="nombre">Nombre completo <span style="color:var(--color-gold);">*</span></label>
+                  <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required autocomplete="name" />
+                  <span class="form-error" style="display:none;font-size:0.75rem;color:#c0392b;margin-top:4px;"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="telefono">Teléfono / WhatsApp <span style="color:var(--color-gold);">*</span></label>
+                  <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="984 000 0000" required autocomplete="tel" />
+                  <span class="form-error" style="display:none;font-size:0.75rem;color:#c0392b;margin-top:4px;"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Correo electrónico <span style="color:var(--color-gold);">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu@correo.com" required autocomplete="email" />
+                <span class="form-error" style="display:none;font-size:0.75rem;color:#c0392b;margin-top:4px;"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="tratamiento">Tratamiento de interés</label>
+                <select id="tratamiento" name="tratamiento" class="form-select">
+                  <option value="">Seleccionar tratamiento…</option>
+                  <option>Fillers de Ácido Hialurónico</option>
+                  <option>Botox Premium</option>
+                  <option>Facial Premium</option>
+                  <option>Depilación Láser</option>
+                  <option>Bioestimulación</option>
+                  <option>Valoración general</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="mensaje">Mensaje <span style="color:var(--color-gold);">*</span></label>
+                <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Cuéntanos sobre tus objetivos o preguntas…" required></textarea>
+                <span class="form-error" style="display:none;font-size:0.75rem;color:#c0392b;margin-top:4px;"></span>
+              </div>
+
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="_honeypot" style="display:none;" tabindex="-1" autocomplete="off" />
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                Enviar mensaje
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Info de contacto -->
+          <div class="reveal-right">
+            <p class="section-tag">Información</p>
+            <h2 class="section-title">Encuéntranos</h2>
+            <div class="gold-line"></div>
+
+            <div style="display:flex;flex-direction:column;gap:2rem;margin-top:2rem;">
+
+              <div style="display:flex;gap:1.2rem;align-items:flex-start;">
+                <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,158,72,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-gold);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-gold);margin-bottom:0.4rem;">Dirección</p>
+                  <p style="font-family:var(--font-body);font-size:0.9rem;color:var(--color-darker);line-height:1.7;">
+                    Av. Sayil SM 6 M 05 Local 202<br>
+                    Zona Hotelera, CP 77500<br>
+                    Cancún, Quintana Roo, México
+                  </p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1.2rem;align-items:flex-start;">
+                <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,158,72,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-gold);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.18h3a2 2 0 012 1.72 12.8 12.8 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.8 12.8 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-gold);margin-bottom:0.4rem;">WhatsApp</p>
+                  <a href="https://wa.me/529842660085" target="_blank" rel="noopener" style="font-family:var(--font-body);font-size:0.9rem;color:var(--color-darker);text-decoration:none;transition:color 0.25s;" onmouseover="this.style.color='var(--color-gold)'" onmouseout="this.style.color='var(--color-darker)'">984 266 0085</a>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1.2rem;align-items:flex-start;">
+                <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,158,72,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-gold);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-gold);margin-bottom:0.4rem;">Email</p>
+                  <a href="mailto:puraestetica.cancun@gmail.com" style="font-family:var(--font-body);font-size:0.9rem;color:var(--color-darker);text-decoration:none;transition:color 0.25s;" onmouseover="this.style.color='var(--color-gold)'" onmouseout="this.style.color='var(--color-darker)'">puraestetica.cancun@gmail.com</a>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1.2rem;align-items:flex-start;">
+                <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,158,72,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-gold);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-gold);margin-bottom:0.4rem;">Horarios</p>
+                  <p style="font-family:var(--font-body);font-size:0.9rem;color:var(--color-darker);line-height:1.8;">
+                    Lunes a Viernes: 10:00 – 18:00<br>
+                    Sábado: 10:00 – 16:00<br>
+                    <span style="color:#999;font-size:0.82rem;">Domingo: Cerrado</span>
+                  </p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1.2rem;align-items:flex-start;">
+                <div style="width:48px;height:48px;border-radius:50%;background:rgba(201,158,72,0.1);display:flex;align-items:center;justify-content:center;color:var(--color-gold);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-gold);margin-bottom:0.4rem;">Instagram</p>
+                  <a href="https://www.instagram.com/puraestetica.mx" target="_blank" rel="noopener" style="font-family:var(--font-body);font-size:0.9rem;color:var(--color-darker);text-decoration:none;transition:color 0.25s;" onmouseover="this.style.color='var(--color-gold)'" onmouseout="this.style.color='var(--color-darker)'">@puraestetica.mx</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- CTA WhatsApp directo -->
+            <div style="margin-top:3rem;padding:2rem;background:linear-gradient(135deg,var(--color-darker) 0%,var(--color-dark) 100%);border-radius:var(--radius-md);text-align:center;">
+              <p style="font-family:var(--font-body);font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--color-gold);margin-bottom:0.8rem;">Respuesta inmediata</p>
+              <p style="font-family:var(--font-heading);font-size:1.4rem;color:var(--color-white);margin-bottom:1.2rem;line-height:1.3;">Escríbenos ahora<br>por WhatsApp</p>
+              <a href="https://wa.me/529842660085?text=Hola%2C+me+gustar%C3%ADa+agendar+una+valoraci%C3%B3n" class="btn btn-primary" target="_blank" rel="noopener" style="width:100%;justify-content:center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Agendar por WhatsApp
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="section-sm" style="background:var(--color-white);">
+      <div class="container">
+        <div class="text-center mb-md">
+          <p class="section-tag reveal">Cómo llegar</p>
+          <h2 class="section-title reveal">Nuestra Ubicación</h2>
+          <div class="gold-line reveal" style="margin:0 auto;"></div>
+        </div>
+        <div class="map-wrapper reveal">
+          <!-- El data-src permite lazy load del iframe -->
+          <iframe
+            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0!2d-86.8515!3d21.1619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPura+Est%C3%A9tica!5e0!3m2!1ses!2smx!4v1234567890"
+            title="Ubicación de Pura Estética en Cancún"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Mapa de ubicación de Pura Estética Cancún">
+          </iframe>
+        </div>
+        <div class="text-center" style="margin-top:1.5rem;">
+          <a href="https://maps.app.goo.gl/pysRAx4auBP2MzyE8?g_st=iw" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Abrir en Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="grid" style="grid-template-columns:1fr; gap:3rem;">
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:3rem;">
+
+          <!-- Marca -->
+          <div>
+            <a href="index.html" aria-label="Pura Estética — Inicio">
+              <img src="assets/images/branding/Logo_FOOTER.png"
+                   alt="Pura Estética — Expertos en Fillers, Cancún"
+                   style="max-width:180px;height:auto;display:block;margin-bottom:0.8rem;"
+                   width="360" height="auto"
+                   loading="lazy" />
+            </a>
+            <p style="font-family:var(--font-body);font-size:0.88rem;color:rgba(244,244,244,0.55);line-height:1.8;max-width:280px;">
+              Medicina estética de lujo en el corazón de Cancún. Belleza natural, resultados extraordinarios.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/puraestetica.mx" target="_blank" rel="noopener" aria-label="Instagram de Pura Estética">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+              </a>
+              <a href="https://wa.me/529842660085" target="_blank" rel="noopener" aria-label="WhatsApp de Pura Estética">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Servicios -->
+          <div>
+            <p class="footer-heading">Tratamientos</p>
+            <a href="servicios.html#fillers"        class="footer-link">Fillers Ácido Hialurónico</a>
+            <a href="servicios.html#botox"          class="footer-link">Botox Premium</a>
+            <a href="servicios.html#faciales"       class="footer-link">Faciales Premium</a>
+            <a href="servicios.html#laser"          class="footer-link">Depilación Láser</a>
+            <a href="servicios.html#bioestimulacion" class="footer-link">Bioestimulación</a>
+          </div>
+
+          <!-- Navegación -->
+          <div>
+            <p class="footer-heading">Navegación</p>
+            <a href="index.html"           class="footer-link">Inicio</a>
+            <a href="servicios.html"       class="footer-link">Servicios</a>
+            <a href="nuestro-trabajo.html" class="footer-link">Nuestro Trabajo</a>
+            <a href="nosotros.html"        class="footer-link">Nosotros</a>
+            <a href="contacto.html"        class="footer-link">Contacto</a>
+          </div>
+
+          <!-- Contacto -->
+          <div>
+            <p class="footer-heading">Contacto</p>
+            <a href="https://wa.me/529842660085" class="footer-link" target="_blank" rel="noopener">984 266 0085</a>
+            <a href="mailto:puraestetica.cancun@gmail.com" class="footer-link">puraestetica.cancun@gmail.com</a>
+            <p class="footer-link" style="cursor:default;">Av. Sayil SM 6 M 05 Local 202,<br>Zona Hotelera, CP 77500<br>Cancún, Q.R.</p>
+            <p class="footer-heading" style="margin-top:1.5rem;">Horarios</p>
+            <p class="footer-link" style="cursor:default;">Lun–Vie: 10:00 – 18:00</p>
+            <p class="footer-link" style="cursor:default;">Sábado: 10:00 – 16:00</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Pura Estética. Todos los derechos reservados.</p>
+        <p class="footer-copy">
+          <a href="privacidad.html" style="color:rgba(244,244,244,0.35);text-decoration:none;">Política de privacidad</a>
+          &nbsp;·&nbsp;
+          <a href="aviso-legal.html" style="color:rgba(244,244,244,0.35);text-decoration:none;">Aviso legal</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/529842660085" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script type="module" src="assets/js/main.js" defer></script>
+</body>
+</html>

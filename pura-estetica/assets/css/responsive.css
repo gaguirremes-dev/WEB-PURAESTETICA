@@ -1,0 +1,83 @@
+/* ============================================================
+   RESPONSIVE — Pura Estética  |  Mobile First
+   ============================================================ */
+
+/* ── Tablet ≥768px ──────────────────────────────────────── */
+@media (min-width: 768px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ── Desktop ≥1024px ────────────────────────────────────── */
+@media (min-width: 1024px) {
+  .hamburger { display: none !important; }
+  .mobile-menu { display: none !important; }
+  .nav-links { display: flex !important; }
+}
+
+/* ── Mobile <1024px ─────────────────────────────────────── */
+@media (max-width: 1023px) {
+  .hamburger { display: flex; }
+  .nav-links  { display: none; }
+  .nav-cta    { display: none; }
+
+  .container,
+  .container-narrow { padding: 0 1.5rem; }
+
+  .section  { padding: var(--space-lg) 0; }
+  .section-sm { padding: 3rem 0; }
+
+  .hero-btns { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}
+
+/* ── Mobile <640px ──────────────────────────────────────── */
+@media (max-width: 639px) {
+  .whatsapp-float { padding: 0.85rem; border-radius: 50%; }
+  .whatsapp-float span { display: none; }
+
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+  .stat-number { font-size: 2.5rem; }
+}
+
+/* ── Utility responsive ─────────────────────────────────── */
+.hidden-mobile  { display: none; }
+.hidden-desktop { display: block; }
+
+@media (min-width: 1024px) {
+  .hidden-mobile  { display: block; }
+  .hidden-desktop { display: none; }
+}
+
+
+/* Grid helpers */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-1 { grid-template-columns: 1fr; }
+
+@media (min-width: 640px)  { .sm\:grid-2 { grid-template-columns: repeat(2,1fr); } }
+@media (min-width: 768px)  { .md\:grid-3 { grid-template-columns: repeat(3,1fr); } }
+@media (min-width: 1024px) { .lg\:grid-4 { grid-template-columns: repeat(4,1fr); } }
+
+/* Flex helpers */
+.flex        { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between{ display: flex; align-items: center; justify-content: space-between; }
+.flex-wrap   { flex-wrap: wrap; }
+.gap-sm      { gap: 1rem; }
+.gap-md      { gap: 2rem; }
+.gap-lg      { gap: 3rem; }
+
+/* Text align */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+@media (max-width: 767px) {
+  .md\:text-center { text-align: center; }
+  .md\:text-center .gold-line { margin-left: auto; margin-right: auto; }
+}

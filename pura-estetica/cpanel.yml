@@ -1,0 +1,49 @@
+# ============================================================
+# cpanel.yml — Pura Estética
+# Configuración de despliegue en cPanel
+# ============================================================
+
+---
+deployment:
+  domain: puraestetica.mx
+  subdomain: www
+  php_version: "8.2"
+  document_root: /public_html
+
+  # Archivos a subir al servidor
+  include:
+    - "*.html"
+    - "assets/**"
+    - "seo/**"
+    - "forms/**"
+    - ".htaccess"
+
+  # Excluir del deploy
+  exclude:
+    - "*.md"
+    - ".git/**"
+    - "node_modules/**"
+    - "*.log"
+
+  # Variables de entorno (configurar en cPanel → Environment Variables)
+  env:
+    MAIL_TO: "puraestetica.cancun@gmail.com"
+    SITE_URL: "https://puraestetica.mx"
+
+  # Redirecciones
+  redirects:
+    - from: /home
+      to: /
+      type: 301
+    - from: /inicio
+      to: /
+      type: 301
+
+  # SSL
+  ssl:
+    enabled: true
+    force_https: true
+    certificate: auto # Let's Encrypt vía cPanel
+
+  # Cron jobs (si aplica)
+  cron_jobs: []
