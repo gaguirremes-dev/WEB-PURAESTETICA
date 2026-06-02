@@ -52,6 +52,12 @@ ServerSignature Off
   Deny from all
 </FilesMatch>
 
+# Bloquear archivos de desarrollo
+<FilesMatch "(fix-servicios\.js|tailwind\.config\.js|tailwind-input\.css|package(-lock)?\.json)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
 # Permitir acceso a manifest y schema
 <FilesMatch "(manifest\.json|schema\.json)$">
   Order Deny,Allow
