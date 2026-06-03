@@ -42,19 +42,31 @@ function initMobileMenu() {
   const menu      = document.querySelector('.mobile-menu');
   if (!hamburger || !menu) return;
 
+  function openMenu() {
+    const scrollbarW = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow     = 'hidden';
+    document.body.style.paddingRight = scrollbarW > 0 ? `${scrollbarW}px` : '';
+    hamburger.classList.add('open');
+    menu.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMenu() {
+    document.body.style.overflow     = '';
+    document.body.style.paddingRight = '';
+    hamburger.classList.remove('open');
+    menu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+
   hamburger.addEventListener('click', () => {
-    const open = hamburger.classList.toggle('open');
-    menu.classList.toggle('open', open);
-    document.body.style.overflow = open ? 'hidden' : '';
+    hamburger.classList.contains('open') ? closeMenu() : openMenu();
   });
 
-  menu.querySelectorAll('a').forEach((a) => {
-    a.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      menu.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  });
+  const closeBtn = menu.querySelector('.mobile-menu-close');
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+  menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
 }
 
 /* ── FAQ accordion ───────────────────────────────────────── */
