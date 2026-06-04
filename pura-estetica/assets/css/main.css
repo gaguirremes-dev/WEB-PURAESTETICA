@@ -355,9 +355,9 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--color-gold);
 }
 .trabajo-tab.active {
-  background: var(--color-gold);
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold-dark));
   border-color: var(--color-gold);
-  color: var(--color-darker);
+  color: var(--color-white);
   font-weight: 600;
 }
 .trabajo-panel { display: none; }
@@ -397,13 +397,13 @@ button { font-family: inherit; cursor: pointer; }
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 3px;
-  background: rgba(10, 8, 5, 0.72);
-  color: rgba(244,244,244,0.92);
-  backdrop-filter: blur(4px);
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold-dark));
+  color: var(--color-white);
+  box-shadow: var(--shadow-gold);
 }
 .ba-static-label.after {
-  background: rgba(201,158,72,0.92);
-  color: var(--color-darker);
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold-dark));
+  color: var(--color-white);
 }
 .ba-static-img--body img {
   aspect-ratio: 2/3;
@@ -413,10 +413,29 @@ button { font-family: inherit; cursor: pointer; }
 .ba-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 @media (min-width: 768px)  { .ba-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .ba-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.ba-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.ba-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.ba-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-darker);
+  letter-spacing: 0.06em;
+}
 
 /* ── 11. Team ────────────────────────────────────────────── */
 .team-section { background: var(--color-white); }
