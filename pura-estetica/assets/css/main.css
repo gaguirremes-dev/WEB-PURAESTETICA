@@ -184,7 +184,7 @@ button { font-family: inherit; cursor: pointer; }
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(3rem, 7vw, 7rem);
+  font-size: clamp(2.5rem, 5.5vw, 5.5rem);
   color: var(--color-white);
   line-height: 1.05;
   margin-bottom: 1.5rem;
