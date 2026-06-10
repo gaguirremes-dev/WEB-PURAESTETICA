@@ -23,11 +23,29 @@ ServerSignature Off
   AddOutputFilterByType DEFLATE image/svg+xml font/woff2
 </IfModule>
 
-# ── No cache — todo siempre fresco ──────────────────────
+# ── Bloquear Bots Agresivos (Ahorro de Ancho de Banda) ─────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Bloquear bots de IA que consumen muchos recursos sin aportar tráfico orgánico
+  RewriteCond %{HTTP_USER_AGENT} ClaudeBot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} GPTBot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} CCBot [NC]
+  RewriteRule .* - [F,L]
+</IfModule>
+
+# ── Caché de archivos (Optimización de Ancho de Banda) ────
 <IfModule mod_headers.c>
-  Header always set Cache-Control "no-cache, no-store, must-revalidate"
-  Header always set Pragma "no-cache"
-  Header always set Expires "0"
+  # 1. NO cachear HTML ni páginas dinámicas (para que siempre estén frescas)
+  <FilesMatch "\.(html|htm|php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  # 2. SÍ cachear imágenes, CSS, JS y fuentes (evita recargas y ahorra ancho de banda)
+  <FilesMatch "\.(css|js|woff2|png|jpg|jpeg|gif|webp|svg|ico|mp4|webm)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
 
   # Security headers
   Header always set X-Content-Type-Options "nosniff"
